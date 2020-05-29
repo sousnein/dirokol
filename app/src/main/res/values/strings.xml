@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HomeActivity</string>
+    <string name="NameOfProfile">sousnein</string>
+    <string name="followers">followers</string>
+    <string name="posts">posts</string>
+    <string name="following">following</string>
+    <string name="followers_count">0</string>
+    <string name="posts_count">0</string>
+    <string name="following_count">0</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="home_text">Sign out</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_username">Username</string>
+    <string name="website_username">Website</string>
+    <string name="bio_username">Bio</string>
+    <string name="private_info_username">Private Info</string>
+    <string name="email_username">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="fragment_namepass">Write your Name and Password</string>
+    <string name="name">Name</string>
+</resources>

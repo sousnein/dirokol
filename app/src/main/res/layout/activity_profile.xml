@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_constraintDimensionRatio="40f"
+    tools:context=".activities.HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style = "@style/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:text="@string/NameOfProfile"
+                style="@style/toolbar_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_more"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="TODO" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/profile_logo"
+        app:civ_border_color="@color/gray"
+        app:civ_border_width="1dp"
+        app:layout_constraintDimensionRatio="2"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/posts_count"
+        style="@style/profile_text_count"
+        android:text="@string/posts_count"
+        app:layout_constraintBottom_toTopOf="@+id/edit_profile_button"
+        app:layout_constraintEnd_toEndOf="@+id/posts"
+        app:layout_constraintStart_toStartOf="@+id/posts"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.38"/>
+
+    <TextView
+        android:id="@+id/posts"
+        style="@style/profile_text"
+        android:text="@string/posts"
+        app:layout_constraintStart_toStartOf="@+id/edit_profile_button"
+        app:layout_constraintEnd_toStartOf="@id/followers"
+        app:layout_constraintTop_toBottomOf="@+id/posts_count" />
+
+    <TextView
+        android:id="@+id/followers_count"
+        style="@style/profile_text_count"
+        android:text="@string/followers_count"
+        app:layout_constraintBaseline_toBaselineOf="@id/posts_count"
+        app:layout_constraintEnd_toEndOf="@+id/followers"
+        app:layout_constraintStart_toStartOf="@+id/followers" />
+
+    <TextView
+        android:id="@+id/followers"
+        style="@style/profile_text"
+        android:text="@string/followers"
+        app:layout_constraintBaseline_toBaselineOf="@id/posts"
+        app:layout_constraintEnd_toStartOf="@+id/profile_text"
+        app:layout_constraintStart_toEndOf="@+id/posts" />
+
+    <TextView
+        android:id="@+id/profile_text_count"
+        style="@style/profile_text_count"
+        android:text="@string/following_count"
+        app:layout_constraintBaseline_toBaselineOf="@id/posts_count"
+        app:layout_constraintEnd_toEndOf="@+id/profile_text"
+        app:layout_constraintStart_toStartOf="@+id/profile_text" />
+
+
+    <TextView
+        android:id="@+id/profile_text"
+        style="@style/profile_text"
+        android:text="@string/following"
+        app:layout_constraintBaseline_toBaselineOf="@id/posts"
+        app:layout_constraintStart_toEndOf="@id/followers"
+        app:layout_constraintEnd_toEndOf="@+id/edit_profile_button"
+
+        />
+
+    <Button
+        android:id="@+id/edit_profile_button"
+        android:layout_width="0dp"
+        android:minHeight="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/edit_profile"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_logo"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toEndOf="@+id/profile_logo" />
+<include layout="@layout/bottom_navigation_view"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
