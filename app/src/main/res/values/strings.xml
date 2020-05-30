@@ -20,4 +20,5 @@
     <string name="sign_up">Sign up</string>
     <string name="fragment_namepass">Write your Name and Password</string>
     <string name="name">Name</string>
+    <string name="please_enter_password">please enter password</string>
 </resources>

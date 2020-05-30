@@ -29,10 +29,11 @@
                 style="@style/toolbar_title"
                 android:text="@string/edit_profile"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/close"
+                app:layout_constraintStart_toEndOf="@+id/close_image"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/save_image"
                 style="@style/toolbar_image"
                 android:src="@drawable/ic_check"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +41,7 @@
                 android:contentDescription="TODO" />
 
             <ImageView
-                android:id="@+id/close"
+                android:id="@+id/close_image"
                 style="@style/toolbar_image"
                 android:contentDescription="TODO"
                 android:src="@drawable/ic_close"
